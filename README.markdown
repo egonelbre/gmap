@@ -1,11 +1,34 @@
+========================================
+Effective algorithms on genotype dataset
+========================================
+
+Abstract
+========
+
+Genotype datasets are usually very large and they are expected to
+grow rapidly. Data size and format will start affecting speed of
+programs, therefore it is neccesary to have a fast framework and data
+representation and structure to get the best performance.
+
+This paper discusses how simplifying the datasets and algorithms can
+have an improvement on program execution speed. We developed
+a data format (GMAP), framework (GMap) and programs for analysing genotype
+datasets.
+
+We compared the speed of programs with Plink using different
+file formats. Testing showed that we can get a large improvement
+in performance using binary file format (such as our GMAP and Plink's BED)
+instead of text-based format (such as PED and TPED). Also, we show that
+our programs work faster than Plink, yet we could not say definitively
+if this is due to our data format or our algorithm implementation.
+
 Compiling
 ================================
 
 Install gdc or dmd.
 Install dsss and rebuild <http://www.dsource.org/projects/dsss>.
 
-$ make
-
+    make
 
 Folder Structure
 ================================
